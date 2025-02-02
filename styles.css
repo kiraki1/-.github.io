@@ -1,0 +1,50 @@
+/* ตั้งค่าพื้นหลังสีเขียวเข้ม */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1B3A34; /* เขียวเข้ม */
+    color: #FFD700; /* เหลืองเข้ม */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* กล่องข้อความและปุ่ม */
+.container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+button {
+    background-color: #FFD700;
+    color: #1B3A34;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #E6C300;
+}
+
+/* พื้นที่สำหรับแสดงกระทง */
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* กระทง */
+.kratong {
+    position: absolute;
+    bottom: -100px; /* เริ่มจากข้างล่าง */
+    width: 50px;
+    height: auto;
+    transition: transform 5s linear;
+}
